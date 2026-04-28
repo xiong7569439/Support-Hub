@@ -2281,6 +2281,58 @@ const ARTICLE_DB = {
         <li><strong>Email:</strong> <a href="mailto:support@60yr.com">support@60yr.com</a></li>
       </ul>
     `
+  },
+
+  /* =====================================================================
+     DMCA POLICY
+  ===================================================================== */
+
+  dmca1: {
+    title: 'DMCA Policy',
+    cat: 'platform',
+    catLabel: 'Platform Policies',
+    catHref: 'index.html',
+    related: ['tos1','pp1','p3'],
+    content: `
+      <h2>SEAWORLD TECHNOLOGY LIMITED DMCA Policy</h2>
+
+      <h3>Introduction</h3>
+      <p>SEAWORLD TECHNOLOGY LIMITED (&ldquo;Company&rdquo;) respects the intellectual property rights of others and expects its users to do the same. In accordance with the Digital Millennium Copyright Act of 1998 (&ldquo;DMCA&rdquo;), we will respond expeditiously to claims of copyright infringement.</p>
+
+      <h3>Designated Agent</h3>
+      <p>If you believe that your work has been copied in a way that constitutes copyright infringement, please provide our Designated Copyright Agent with the following information:</p>
+      <ul>
+        <li><strong>Name:</strong> Max Xia</li>
+        <li><strong>Address:</strong> ROOM 232 2/F SECURE HOUSE 68 HOW MING STREET KWUN TONG KL</li>
+        <li><strong>Email:</strong> <a href="mailto:support@60yr.com">support@60yr.com</a></li>
+        <li><strong>Phone:</strong> (+852) 39622601</li>
+      </ul>
+
+      <h3>Takedown Notice Requirements</h3>
+      <p>To be effective, the notification must include:</p>
+      <ol>
+        <li>A physical or electronic signature of the copyright owner or agent.</li>
+        <li>Identification of the copyrighted work claimed to have been infringed.</li>
+        <li>Identification of the material that is claimed to be infringing and its location (URL).</li>
+        <li>Contact information of the complaining party.</li>
+        <li>A statement that the complaining party has a good faith belief that use of the material is not authorized.</li>
+        <li>A statement that the information in the notification is accurate, and under penalty of perjury, that the complaining party is authorized to act on behalf of the owner.</li>
+      </ol>
+
+      <h3>Counter-Notification</h3>
+      <p>If you believe your material was removed by mistake or misidentification, you may submit a counter-notification to our Designated Agent. The counter-notification must include the following:</p>
+      <ol>
+        <li>Your physical or electronic signature.</li>
+        <li>Identification of the material that has been removed or to which access has been disabled, and the location at which the material appeared before it was removed or access to it was disabled (e.g., the URL or listing ID of the affected game account listing).</li>
+        <li>A statement under penalty of perjury that you have a good faith belief that the material was removed or disabled as a result of mistake or misidentification of the material to be removed or disabled.</li>
+        <li>Your name, address, and telephone number.</li>
+        <li>A statement that you consent to the jurisdiction of the Federal District Court for the judicial district in which your address is located, or if your address is outside of the United States, for any judicial district in which the Company may be found, and that you will accept service of process from the person who provided the original takedown notification or an agent of such person.</li>
+      </ol>
+      <p>Upon receipt of a valid counter-notification, we will promptly provide a copy to the original complainant and inform them that we will restore the removed material or cease disabling access to it within 10 to 14 business days, unless our Designated Agent first receives notice that the original complainant has filed an action seeking a court order to restrain you from engaging in infringing activity relating to the material on our platform.</p>
+
+      <h3>Repeat Infringer Policy</h3>
+      <p>We reserve the right to terminate users who are deemed to be repeat infringers.</p>
+    `
   }
 
 };
