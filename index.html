@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>60YR Support Hub</title>
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800;900&family=Rajdhani:wght@300;400;500;600;700&family=Share+Tech+Mono&display=swap" rel="stylesheet" />
+</head>
+<body class="home-page">
+
+  <!-- ===== HEADER ===== -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="logo">
+        <span class="logo-badge">60YR</span>
+        <span class="logo-text">Support Hub</span>
+      </a>
+      <nav class="header-nav">
+        <a href="buyer.html">Buyer Help</a>
+        <a href="seller.html">Seller Help</a>
+        <a href="#contact" class="btn-contact">Contact Us</a>
+      </nav>
+      <button class="hamburger" id="hamburger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <div class="mobile-menu" id="mobileMenu">
+      <a href="buyer.html">Buyer Help</a>
+      <a href="seller.html">Seller Help</a>
+      <a href="#contact">Contact Us</a>
+    </div>
+  </header>
+
+  <!-- ===== HERO ===== -->
+  <section class="hero">
+    <div class="hero-bg-glow"></div>
+    <div class="container hero-content">
+      <div class="hero-tag">60YR Game Account Platform</div>
+      <h1 class="hero-title">How can we <span>help</span> you?</h1>
+      <p class="hero-sub">Search our knowledge base or browse topics below</p>
+      <div class="search-wrap">
+        <div class="search-box" id="searchBox">
+          <svg class="search-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+          <input type="text" id="searchInput" placeholder="Search for answers..." autocomplete="off" />
+          <button class="search-btn" onclick="doSearch()">Search</button>
+        </div>
+        <div class="search-dropdown" id="searchDropdown"></div>
+      </div>
+      <div class="hero-quick-links">
+        <span>Popular:</span>
+        <a href="article.html?id=b1">How to buy a game account</a>
+        <a href="article.html?id=b5">Refund policy</a>
+        <a href="article.html?id=s1">How to sell on 60YR</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== DUAL PORTAL ===== -->
+  <section class="dual-portal">
+    <div class="container">
+      <div class="portal-grid">
+
+        <!-- Buyer Card -->
+        <a href="buyer.html" class="portal-card portal-buyer">
+          <div class="portal-icon-wrap">
+            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 0 1-8 0"/></svg>
+          </div>
+          <div class="portal-info">
+            <h2>Buyer Support</h2>
+            <p>Find answers about purchasing game accounts, payment, delivery, and disputes.</p>
+            <div class="portal-topics">
+              <span>Purchasing</span>
+              <span>Payment</span>
+              <span>Refunds</span>
+              <span>Account Safety</span>
+            </div>
+          </div>
+          <div class="portal-arrow">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+          </div>
+        </a>
+
+        <!-- Seller Card -->
+        <a href="seller.html" class="portal-card portal-seller">
+          <div class="portal-icon-wrap">
+            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+          </div>
+          <div class="portal-info">
+            <h2>Seller Support</h2>
+            <p>Learn how to list accounts, manage orders, handle disputes, and grow your store.</p>
+            <div class="portal-topics">
+              <span>Listing</span>
+              <span>Orders</span>
+              <span>Verification</span>
+              <span>Payouts</span>
+            </div>
+          </div>
+          <div class="portal-arrow">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+          </div>
+        </a>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FEATURED TOPICS ===== -->
+  <section class="featured-section">
+    <div class="container">
+      <h2 class="section-title">Popular Help Topics</h2>
+      <div class="topic-grid">
+
+        <div class="topic-card">
+          <div class="topic-icon buyer-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/></svg>
+          </div>
+          <h3>Buying a Game Account</h3>
+          <ul>
+            <li><a href="article.html?id=b1">How to purchase an account</a></li>
+            <li><a href="article.html?id=b2">What payment methods are accepted</a></li>
+            <li><a href="article.html?id=b3">How to check order status</a></li>
+            <li><a href="article.html?id=b4">Account delivery & handover process</a></li>
+          </ul>
+          <a href="buyer.html#buying" class="topic-more">View all →</a>
+        </div>
+
+        <div class="topic-card">
+          <div class="topic-icon warn-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"/><line x1="12" y1="9" x2="12" y2="13"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
+          </div>
+          <h3>Disputes & Refunds</h3>
+          <ul>
+            <li><a href="article.html?id=b5">60YR refund policy</a></li>
+            <li><a href="article.html?id=b6">How to open a dispute</a></li>
+            <li><a href="article.html?id=b7">Dispute resolution timeline</a></li>
+            <li><a href="article.html?id=b8">Chargeback information</a></li>
+          </ul>
+          <a href="buyer.html#disputes" class="topic-more">View all →</a>
+        </div>
+
+        <div class="topic-card">
+          <div class="topic-icon seller-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+          </div>
+          <h3>Payouts & Fees</h3>
+          <ul>
+            <li><a href="article.html?id=s6">Fee schedule & commission</a></li>
+            <li><a href="article.html?id=s7">How to withdraw earnings</a></li>
+            <li><a href="article.html?id=s8">Payout processing time</a></li>
+            <li><a href="article.html?id=s9">Supported withdrawal methods</a></li>
+          </ul>
+          <a href="seller.html#payouts" class="topic-more">View all →</a>
+        </div>
+
+        <div class="topic-card">
+          <div class="topic-icon success-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+          </div>
+          <h3>Account & Security</h3>
+          <ul>
+            <li><a href="article.html?id=a1">How to enable two-factor auth</a></li>
+            <li><a href="article.html?id=a2">Forgot password recovery</a></li>
+            <li><a href="article.html?id=a3">Suspicious activity on my account</a></li>
+            <li><a href="article.html?id=a4">How to delete my account</a></li>
+          </ul>
+          <a href="buyer.html#account" class="topic-more">View all →</a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CONTACT SECTION ===== -->
+  <section class="contact-section" id="contact">
+    <div class="container">
+      <h2 class="section-title">Still need help?</h2>
+      <p class="section-sub">Our support team is available 24/7 to assist you</p>
+      <div class="contact-grid">
+        <a href="mailto:support@60yr.com" class="contact-card">
+          <div class="contact-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+          </div>
+          <div>
+            <h3>Email Support</h3>
+            <p>support@60yr.com</p>
+          </div>
+        </a>
+        <a href="#" class="contact-card">
+          <div class="contact-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+          </div>
+          <div>
+            <h3>Live Chat</h3>
+            <p>Chat with us in real-time</p>
+          </div>
+        </a>
+        <a href="#" class="contact-card">
+          <div class="contact-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21.44 11.05l-9.19 9.19a6 6 0 0 1-8.49-8.49l9.19-9.19a4 4 0 0 1 5.66 5.66l-9.2 9.19a2 2 0 0 1-2.83-2.83l8.49-8.48"/></svg>
+          </div>
+          <div>
+            <h3>Submit a Ticket</h3>
+            <p>Track your support request</p>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <span class="logo-badge">60YR</span>
+        <p>The trusted game account trading platform</p>
+      </div>
+      <div class="footer-links">
+        <div>
+          <h4>Support</h4>
+          <a href="buyer.html">Buyer Help</a>
+          <a href="seller.html">Seller Help</a>
+          <a href="#contact">Contact Us</a>
+        </div>
+        <div>
+          <h4>Platform</h4>
+          <a href="article.html?id=tos1">Terms of Service</a>
+          <a href="article.html?id=pp1">Privacy Policy</a>
+          <a href="article.html?id=p3">Community Rules</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2026 60YR. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
