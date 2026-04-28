@@ -2302,7 +2302,7 @@ const ARTICLE_DB = {
       <h3>Designated Agent</h3>
       <p>If you believe that your work has been copied in a way that constitutes copyright infringement, please provide our Designated Copyright Agent with the following information:</p>
       <ul>
-        <li><strong>Name:</strong> Max Xia</li>
+        <li><strong>Name:</strong> XIAKEJU</li>
         <li><strong>Address:</strong> ROOM 232 2/F SECURE HOUSE 68 HOW MING STREET KWUN TONG KL</li>
         <li><strong>Email:</strong> <a href="mailto:support@60yr.com">support@60yr.com</a></li>
         <li><strong>Phone:</strong> (+852) 39622601</li>
