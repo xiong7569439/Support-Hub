@@ -39,7 +39,7 @@ const ARTICLE_DB = {
       </ul>
 
       <h2>Step 3 — Add to Cart &amp; Checkout</h2>
-      <p>Click <strong>"Buy Now"</strong> and proceed to checkout. Select your preferred payment method (credit/debit card, PayPal, cryptocurrency, etc.) and confirm the order. Your payment is held in escrow — the seller does not receive funds until you confirm delivery.</p>
+      <p>Click <strong>"Buy Now"</strong> and proceed to checkout. Select your preferred payment method (credit/debit card, PayPal, etc.) and confirm the order. Your payment is held in escrow — the seller does not receive funds until you confirm delivery.</p>
 
       <h2>Step 4 — Receive Account Credentials</h2>
       <p>After successful payment, the seller has <strong>24 hours</strong> to deliver the account login credentials through the 60YR secure platform. You will receive an email and in-app notification when credentials are ready.</p>
@@ -89,13 +89,12 @@ const ARTICLE_DB = {
       <ul>
         <li><strong>Credit / Debit Card</strong> — Visa, Mastercard, American Express</li>
         <li><strong>PayPal</strong> — Fast and widely available globally</li>
-        <li><strong>Cryptocurrency</strong> — Bitcoin (BTC), Ethereum (ETH), USDT (TRC20/ERC20)</li>
         <li><strong>60YR Wallet</strong> — Pre-loaded balance for instant checkout</li>
         <li><strong>Alipay / WeChat Pay</strong> — Available for users in supported regions</li>
       </ul>
 
       <h2>Payment Security</h2>
-      <p>All card payments are processed through PCI-DSS compliant payment gateways. 60YR never stores your full card number. Cryptocurrency payments are confirmed on-chain before the order proceeds.</p>
+      <p>All card payments are processed through PCI-DSS compliant payment gateways. 60YR never stores your full card number.</p>
 
       <div class="article-callout">
         <p><strong>Escrow System:</strong> All payments are held in escrow until you confirm receipt of the account. The seller receives funds only after successful delivery and your confirmation.</p>
@@ -277,7 +276,6 @@ const ARTICLE_DB = {
         <li>Credit/Debit Card: 5–10 business days</li>
         <li>PayPal: 1–3 business days</li>
         <li>60YR Wallet: Instant</li>
-        <li>Cryptocurrency: 1–5 business days (network dependent)</li>
       </ul>
     `
   },
@@ -595,7 +593,7 @@ const ARTICLE_DB = {
       <ul>
         <li>When your cumulative purchase amount exceeds <strong>$500 USD</strong> in any 30-day period</li>
         <li>When your account is flagged for unusual activity</li>
-        <li>When you request payouts or wallet withdrawals above threshold limits</li>
+        <li>When you request payouts or withdrawals above threshold limits</li>
         <li>When required by local law or regulation in your jurisdiction</li>
         <li>When you register from a high-risk region as determined by our compliance system</li>
       </ul>
@@ -653,7 +651,7 @@ const ARTICLE_DB = {
         <li>Splitting purchases to avoid verification thresholds ("structuring")</li>
         <li>Using multiple accounts to circumvent AML controls</li>
         <li>Purchasing accounts with the intent to resell for profit laundering</li>
-        <li>Using cryptocurrency mixers or anonymization tools in connection with platform payments</li>
+        <li>Using payment anonymization tools in connection with platform payments</li>
       </ul>
 
       <h2>Consequences of AML Violations</h2>
@@ -874,7 +872,7 @@ const ARTICLE_DB = {
       <h2>Signs of Compromised Account</h2>
       <ul>
         <li>Unexpected orders you didn't place</li>
-        <li>Wallet balance changed without your action</li>
+        <li>Account balance changed without your action</li>
         <li>Login from an unknown location or device</li>
         <li>Password or email changed without your knowledge</li>
         <li>New listings created that you didn't add</li>
@@ -912,7 +910,7 @@ const ARTICLE_DB = {
       <h2>Before You Delete</h2>
       <ul>
         <li>Ensure all pending orders are completed or cancelled</li>
-        <li>Withdraw any remaining 60YR Wallet balance</li>
+        <li>Withdraw any remaining 60YR account balance</li>
         <li>Download any transaction history you may need for records</li>
         <li>Resolve any open disputes</li>
       </ul>
@@ -977,7 +975,7 @@ const ARTICLE_DB = {
       <ul>
         <li>A verified 60YR account (email verified)</li>
         <li>Completed seller KYC identity verification</li>
-        <li>A valid payout method set up (bank, PayPal, or crypto)</li>
+        <li>A valid payout method set up (bank or PayPal)</li>
         <li>Game accounts that comply with the <a href="article.html?id=sl2">Permitted Listing Policy</a></li>
       </ul>
     `
@@ -1217,7 +1215,6 @@ const ARTICLE_DB = {
       <ul>
         <li><strong>PayPal:</strong> Free (up to $500/month), then 1%</li>
         <li><strong>Bank Transfer:</strong> $1.50 flat fee per transfer</li>
-        <li><strong>Cryptocurrency:</strong> Network gas fee only (varies)</li>
       </ul>
 
       <h2>No Listing Fees</h2>
@@ -1236,12 +1233,12 @@ const ARTICLE_DB = {
     catHref: 'seller.html',
     related: ['s6','s8','s9'],
     content: `
-      <p>Once your earnings are released to your 60YR Wallet, you can withdraw them to your preferred payment method.</p>
+      <p>Once your earnings are released to your 60YR account, you can withdraw them to your preferred payment method.</p>
 
       <h2>How to Initiate a Withdrawal</h2>
       <ol>
         <li>Go to <strong>Seller Dashboard → Wallet → Withdraw</strong></li>
-        <li>Select your withdrawal method (PayPal, bank transfer, or cryptocurrency)</li>
+        <li>Select your withdrawal method (PayPal or bank transfer)</li>
         <li>Enter the amount to withdraw (must meet minimum threshold)</li>
         <li>Confirm the withdrawal details</li>
         <li>Submit</li>
@@ -1251,11 +1248,10 @@ const ARTICLE_DB = {
       <ul>
         <li>PayPal: $10 minimum</li>
         <li>Bank Transfer: $20 minimum</li>
-        <li>Cryptocurrency: $15 equivalent minimum</li>
       </ul>
 
       <h2>When Are Funds Available to Withdraw?</h2>
-      <p>Earnings from completed orders are subject to a <strong>3-day security hold</strong> after the buyer confirms receipt. After the hold, funds appear as "Available" in your wallet. This hold exists to protect against late disputes.</p>
+      <p>Earnings from completed orders are subject to a <strong>3-day security hold</strong> after the buyer confirms receipt. After the hold, funds appear as "Available" in your account. This hold exists to protect against late disputes.</p>
 
       <h2>Withdrawal Limits</h2>
       <p>Withdrawal limits depend on your seller verification tier. See the <a href="article.html?id=s3">Seller Verification</a> article for tier limits. Sellers processing large volumes may be subject to additional AML documentation requirements.</p>
@@ -1293,21 +1289,17 @@ const ARTICLE_DB = {
               <td style="padding:10px 12px;">Security hold period</td>
               <td style="padding:10px 12px;color:var(--text-2);">3 days</td>
             </tr>
-            <tr style="border-bottom:1px solid var(--border);">
-              <td style="padding:10px 12px;">Funds available in 60YR Wallet</td>
+            <tr>
+              <td style="padding:10px 12px;">Funds available in 60YR account</td>
               <td style="padding:10px 12px;color:var(--text-2);">Day 3</td>
             </tr>
             <tr style="border-bottom:1px solid var(--border);">
               <td style="padding:10px 12px;">PayPal transfer</td>
               <td style="padding:10px 12px;color:var(--text-2);">1–3 business days</td>
             </tr>
-            <tr style="border-bottom:1px solid var(--border);">
+            <tr>
               <td style="padding:10px 12px;">Bank transfer</td>
               <td style="padding:10px 12px;color:var(--text-2);">3–7 business days</td>
-            </tr>
-            <tr>
-              <td style="padding:10px 12px;">Cryptocurrency</td>
-              <td style="padding:10px 12px;color:var(--text-2);">1–2 days (after network confirmation)</td>
             </tr>
           </tbody>
         </table>
@@ -1352,25 +1344,12 @@ const ARTICLE_DB = {
         <li>Requires completed banking details including account number, routing/SWIFT, and bank name</li>
       </ul>
 
-      <h2>Cryptocurrency</h2>
-      <ul>
-        <li>Supported: Bitcoin (BTC), Ethereum (ETH), USDT (TRC20 / ERC20)</li>
-        <li>Minimum: $15 equivalent</li>
-        <li>Fee: Network gas fee only (paid from your withdrawal amount)</li>
-        <li>Processing time: 1–2 days after network confirmation</li>
-        <li>Provide your wallet address carefully — crypto transfers are irreversible</li>
-      </ul>
-
-      <div class="article-callout warn">
-        <p><strong>AML Note:</strong> Cryptocurrency withdrawals above $1,000 in a 24-hour period require enhanced identity verification as part of our AML compliance obligations.</p>
-      </div>
-
       <h2>Adding a Withdrawal Method</h2>
       <ol>
         <li>Go to <strong>Seller Dashboard → Wallet → Payment Methods</strong></li>
         <li>Click <strong>"Add Method"</strong></li>
         <li>Select the type and enter your details</li>
-        <li>Verify ownership (PayPal: micropayment verification; bank: micro-deposit; crypto: wallet ownership signature)</li>
+        <li>Verify ownership (PayPal: micropayment verification; bank: micro-deposit)</li>
       </ol>
     `
   },
@@ -1527,7 +1506,7 @@ const ARTICLE_DB = {
       <ul>
         <li>Show the in-game profile summary page</li>
         <li>Screenshot the character/skin/item inventory</li>
-        <li>Capture the currency and in-game wallet</li>
+        <li>Capture the in-game currency and balance</li>
         <li>Show the account's rank history if possible</li>
         <li>Ensure screenshots are recent and not edited</li>
       </ul>
@@ -1971,7 +1950,7 @@ const ARTICLE_DB = {
 
       <h2>What Counts as an Off-Platform Deal?</h2>
       <ul>
-        <li>Asking a buyer to pay via PayPal, bank transfer, crypto, or any method outside 60YR</li>
+        <li>Asking a buyer to pay via PayPal, bank transfer, or any method outside 60YR</li>
         <li>Sharing your external contact details (WhatsApp, Telegram, Line, WeChat, Discord) for transaction purposes</li>
         <li>Linking to external stores, websites, or marketplaces</li>
         <li>Using 60YR chat to build a buyer relationship with intent to transact elsewhere</li>
@@ -1990,7 +1969,7 @@ const ARTICLE_DB = {
       <p>Soliciting or conducting off-platform deals will result in:</p>
       <ul>
         <li>Immediate permanent account suspension</li>
-        <li>Forfeiture of any funds held in your 60YR Wallet</li>
+        <li>Forfeiture of any funds held in your 60YR account</li>
         <li>Removal of all listings</li>
         <li>Potential AML investigation and law enforcement referral</li>
       </ul>
