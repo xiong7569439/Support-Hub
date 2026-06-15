@@ -987,6 +987,203 @@ img { display: block; max-width: 100%; }
 }
 .article-callout p { margin: 0; }
 
+/* ─── AML / Compliance Flow Styles ─── */
+
+.aml-partner-badges {
+  display: flex;
+  gap: 16px;
+  margin: 20px 0;
+  flex-wrap: wrap;
+}
+.aml-partner-badge {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  padding: 14px 18px;
+  border-radius: 4px;
+  flex: 1;
+  min-width: 260px;
+}
+.aml-partner-badge:hover {
+  border-color: var(--accent);
+  box-shadow: 0 0 16px var(--accent-glow);
+}
+.aml-partner-icon {
+  font-size: 28px;
+  line-height: 1;
+}
+.aml-partner-info strong {
+  font-family: var(--font-heading);
+  font-size: 13px;
+  letter-spacing: 1px;
+  color: var(--accent);
+  display: block;
+  margin-bottom: 2px;
+}
+.aml-partner-info span {
+  font-family: var(--font-body);
+  font-size: 13px;
+  color: var(--text-3);
+}
+
+.aml-callout-framework {
+  display: flex;
+  gap: 16px;
+  margin: 24px 0;
+  flex-wrap: wrap;
+}
+.aml-callout-item {
+  flex: 1;
+  min-width: 240px;
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  padding: 18px;
+  border-radius: 4px;
+}
+.aml-callout-item:hover {
+  border-color: var(--border-hover);
+}
+.aml-callout-label {
+  font-family: var(--font-heading);
+  font-size: 11px;
+  letter-spacing: 1.5px;
+  color: var(--accent);
+  margin-bottom: 8px;
+  display: block;
+}
+.aml-callout-desc {
+  font-family: var(--font-body);
+  font-size: 14px;
+  color: var(--text-2);
+  line-height: 1.5;
+}
+
+.aml-flow-diagram {
+  margin: 28px 0;
+}
+.aml-flow-step {
+  display: flex;
+  gap: 16px;
+  align-items: flex-start;
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  padding: 16px 18px;
+  border-radius: 4px;
+  margin-bottom: 0;
+}
+.aml-flow-step:hover {
+  border-color: var(--border-hover);
+}
+.aml-step-num {
+  font-family: var(--font-heading);
+  font-size: 16px;
+  font-weight: 700;
+  color: var(--bg-deep);
+  background: var(--accent);
+  width: 36px;
+  height: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 4px;
+  flex-shrink: 0;
+}
+.aml-step-final .aml-step-num {
+  background: var(--seller);
+}
+.aml-step-body h3 {
+  font-family: var(--font-heading);
+  font-size: 14px;
+  letter-spacing: 0.5px;
+  margin: 0 0 8px 0;
+  color: var(--text-1);
+}
+.aml-step-body p {
+  font-size: 14px;
+  color: var(--text-2);
+  margin-bottom: 6px;
+}
+.aml-step-body ul {
+  padding-left: 18px;
+  margin-bottom: 6px;
+}
+.aml-step-body li {
+  font-size: 13px;
+  color: var(--text-2);
+  list-style: disc;
+  margin-bottom: 4px;
+}
+.aml-step-detail {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  color: var(--text-3);
+  background: var(--bg-card2);
+  padding: 6px 10px;
+  border-radius: 3px;
+  margin-top: 6px;
+}
+.aml-flow-connector {
+  width: 2px;
+  height: 18px;
+  background: var(--accent);
+  margin: 0 auto;
+  opacity: 0.5;
+}
+
+.aml-decision-table {
+  margin: 16px 0;
+}
+.aml-decision-row {
+  display: flex;
+  align-items: flex-start;
+  gap: 14px;
+  padding: 12px 16px;
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  margin-bottom: 8px;
+}
+.aml-decision-label {
+  font-family: var(--font-heading);
+  font-size: 12px;
+  letter-spacing: 1px;
+  padding: 4px 12px;
+  border-radius: 3px;
+  flex-shrink: 0;
+  min-width: 80px;
+  text-align: center;
+}
+.aml-decision-approve .aml-decision-label {
+  background: rgba(0,245,212,0.15);
+  color: var(--accent);
+}
+.aml-decision-review .aml-decision-label {
+  background: rgba(255,193,7,0.15);
+  color: #ffc107;
+}
+.aml-decision-reject .aml-decision-label {
+  background: rgba(255,107,53,0.15);
+  color: var(--seller);
+}
+.aml-decision-desc {
+  font-family: var(--font-body);
+  font-size: 14px;
+  color: var(--text-2);
+}
+
+@media (max-width: 768px) {
+  .aml-partner-badges { flex-direction: column; }
+  .aml-callout-framework { flex-direction: column; }
+  .aml-flow-step { flex-direction: column; align-items: center; text-align: center; }
+  .aml-step-body ul { padding-left: 14px; text-align: left; }
+  .aml-decision-row { flex-direction: column; align-items: flex-start; }
+  .aml-decision-label { min-width: unset; }
+}
+
+/* ─── End AML Styles ─── */
+
 /* Article sidebar */
 .article-sidebar { position: sticky; top: 72px; }
 .article-sidebar-box {
