@@ -630,19 +630,138 @@ const ARTICLE_DB = {
     catHref: 'buyer.html',
     related: ['bkyc1','b8','p1'],
     content: `
-      <p>60YR, operated by <strong>SEAWORLD TECHNOLOGY LIMITED</strong>, is committed to operating a safe, transparent, and legally compliant marketplace. Our Anti-Money Laundering (AML) policy applies to all users of the platform — buyers and sellers alike. We comply with international AML frameworks including the <strong>FATF (Financial Action Task Force) recommendations</strong> and applicable local regulations.</p>
+      <p>60YR, operated by <strong>SEAWORLD TECHNOLOGY LIMITED</strong>, is committed to operating a safe, transparent, and legally compliant marketplace. Our Anti-Money Laundering (AML) policy applies to all users of the platform — buyers and sellers alike. We comply with international AML frameworks including the <strong>FATF (Financial Action Task Force) recommendations</strong> and applicable local regulations. To ensure the integrity of our marketplace, we have partnered with <strong>industry-leading third-party compliance providers</strong> — <a href="https://sumsub.com" target="_blank" rel="noopener">Sumsub</a> for identity verification and <a href="https://forter.com" target="_blank" rel="noopener">Forter</a> for real-time transaction risk intelligence.</p>
+
+      <div class="aml-partner-badges">
+        <div class="aml-partner-badge">
+          <span class="aml-partner-icon">🛡️</span>
+          <div class="aml-partner-info">
+            <strong>Sumsub</strong>
+            <span>Global Identity Verification &amp; Compliance Platform</span>
+          </div>
+        </div>
+        <div class="aml-partner-badge">
+          <span class="aml-partner-icon">🔍</span>
+          <div class="aml-partner-info">
+            <strong>Forter</strong>
+            <span>Real-Time Fraud Prevention &amp; Decision Engine</span>
+          </div>
+        </div>
+      </div>
 
       <h2>What is Money Laundering?</h2>
-      <p>Money laundering is the process of making illegally-obtained funds appear legitimate. In digital marketplaces, this can occur through purchasing virtual goods with stolen payment methods, cycling funds through virtual accounts, or using the platform to convert illicit funds into platform credits or withdrawable cash.</p>
+      <p>Money laundering is the process of making illegally-obtained funds appear legitimate. In digital marketplaces, this can occur through purchasing virtual goods with stolen payment methods, cycling funds through virtual accounts, or using the platform to convert illicit funds into platform credits or withdrawable cash. Buyers may unknowingly become part of a money laundering chain — for example, by using compromised payment instruments or acting as intermediaries for third-party funds. 60YR takes a zero-tolerance stance on any form of money laundering and has invested heavily in automated and manual detection systems to protect all users.</p>
 
-      <h2>60YR's AML Commitments</h2>
-      <p>We employ a <strong>multi-layered compliance infrastructure</strong> powered by globally recognized third-party platforms:</p>
+      <h2>Third-Party Compliance Infrastructure</h2>
+      <p>Rather than relying solely on in-house systems, 60YR has integrated <strong>two globally recognized compliance platforms</strong> into our operations. This multi-layered approach ensures that both sellers and buyers are protected — sellers are rigorously verified before any financial activity, and every transaction is continuously monitored for risk signals on both sides of the trade.</p>
+
+      <div class="aml-callout-framework">
+        <div class="aml-callout-item">
+          <div class="aml-callout-label">Identity Layer</div>
+          <div class="aml-callout-desc"><strong>Sumsub</strong> — All sellers must complete Sumsub's multi-stage identity verification before being granted publishing, trading, or payout access. Buyers exceeding purchase thresholds or flagged for unusual activity are also required to complete Sumsub KYC. This includes document authentication, biometric liveness checks, and global compliance screening.</div>
+        </div>
+        <div class="aml-callout-item">
+          <div class="aml-callout-label">Transaction Layer</div>
+          <div class="aml-callout-desc"><strong>Forter</strong> — Every purchase and payout is analyzed by Forter's decision engine in real time. From the buyer's perspective, Forter ensures that your payment is processed safely, detects whether your payment instrument has been compromised, and blocks transactions where the other party (seller) poses a fraud risk — protecting you from losing money to bad actors.</div>
+        </div>
+      </div>
+
+      <h2>Buyer KYC via Sumsub — When and Why</h2>
+      <p>While seller KYC verification via Sumsub is mandatory from the start, buyer KYC is <strong>conditional</strong> and triggered by specific risk thresholds. This approach balances regulatory compliance with user convenience — most casual buyers will never need to complete KYC, but high-volume or flagged users will be required to verify their identity.</p>
+
+      <h3>When Buyer KYC is Required</h3>
       <ul>
-        <li><strong>Identity Verification (Sumsub):</strong> All sellers must pass Sumsub's multi-stage identity verification — including document authentication, biometric liveness checks, and global compliance screening — before they can publish listings or receive payouts. <a href="article.html?id=saml1">See full seller AML policy →</a></li>
-        <li><strong>Transaction Monitoring (Forter):</strong> Every transaction is analyzed by Forter's real-time decision engine, which detects suspicious patterns, velocity fraud, identity mismatches, and coordinated fraud rings — automatically blocking or flagging risky transactions before financial loss occurs</li>
-        <li>We comply with international AML frameworks including FATF recommendations</li>
-        <li>We report suspicious activity to relevant financial intelligence authorities as required by law</li>
-        <li>We maintain transaction records for a minimum of 5 years for regulatory audit compliance</li>
+        <li>When your cumulative purchase amount exceeds <strong>$500 USD</strong> in any 30-day period</li>
+        <li>When your account is flagged by Forter for unusual or high-risk activity patterns</li>
+        <li>When your payment instrument is associated with previous fraud or chargeback activity</li>
+        <li>When required by local law or regulation in your jurisdiction</li>
+        <li>When you register from a high-risk region as determined by our compliance system</li>
+      </ul>
+
+      <h3>Buyer KYC Verification Flow</h3>
+      <p>If KYC is triggered, you will be prompted to complete verification through our integrated Sumsub flow. The process is the same industry-standard technology used for sellers:</p>
+
+      <div class="aml-flow-diagram">
+        <div class="aml-flow-step">
+          <div class="aml-step-num">1</div>
+          <div class="aml-step-body">
+            <h3>KYC Triggered</h3>
+            <p>When a buyer hits a purchase threshold or is flagged by Forter, the platform automatically displays a KYC prompt in the buyer portal. The prompt explains why verification is required, what documents are needed, and how your data will be handled.</p>
+            <div class="aml-step-detail">Required: Government ID or passport, selfie or liveness check, consistent country and personal details</div>
+          </div>
+        </div>
+        <div class="aml-flow-connector"></div>
+        <div class="aml-flow-step">
+          <div class="aml-step-num">2</div>
+          <div class="aml-step-body">
+            <h3>Sumsub Identity Checks</h3>
+            <p>The buyer completes verification directly on the Sumsub platform:</p>
+            <ul>
+              <li><strong>Document Upload &amp; Authentication:</strong> AI-powered verification checks for authenticity, expiration, tampering, and consistency</li>
+              <li><strong>Selfie / Liveness Check:</strong> Real-time biometric verification — not an uploaded photo or deepfake</li>
+              <li><strong>Compliance Screening:</strong> AML/KYC database screening against global watchlists, PEP lists, and sanctions databases</li>
+            </ul>
+            <div class="aml-step-detail">Sumsub's technology provides 99.8% verification accuracy across 220+ countries and territories</div>
+          </div>
+        </div>
+        <div class="aml-flow-connector"></div>
+        <div class="aml-flow-step">
+          <div class="aml-step-num">3</div>
+          <div class="aml-step-body">
+            <h3>Verification Result &amp; Access</h3>
+            <p>After Sumsub returns the result:</p>
+            <ul>
+              <li><strong>Passed:</strong> Buyer verification is complete. Purchase limits are lifted and full account access is restored</li>
+              <li><strong>Needs Update:</strong> Buyer is asked to resubmit with corrected documents. Purchases above threshold remain paused until verification is complete</li>
+              <li><strong>Failed / High Risk:</strong> Account is flagged for compliance review. Further purchases are restricted until manually reviewed by our compliance team</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="article-callout">
+        <p><strong>Buyer KYC is protective, not punitive.</strong> Completing KYC through Sumsub protects you as a buyer — it ensures that your identity is confirmed on the platform, prevents unauthorized use of your payment methods, and gives you access to higher purchase limits and full Buyer Protection benefits.</p>
+      </div>
+
+      <h2>Transaction Risk Detection via Forter — Buyer Perspective</h2>
+      <p>While Sumsub ensures that users are who they claim to be, <strong>Forter</strong> provides continuous protection for every transaction — including the buyer's side. Here's how Forter protects you as a buyer:</p>
+
+      <h3>How Forter Protects Buyers on 60YR</h3>
+      <ul>
+        <li><strong>Payment Instrument Verification:</strong> Forter checks whether your payment method (credit card, debit card, etc.) has been previously associated with fraud across its global merchant network — protecting you from using compromised instruments</li>
+        <li><strong>Seller Risk Screening:</strong> Before your payment is processed, Forter evaluates the seller's risk profile — if the seller poses a fraud risk (e.g., identity mismatch, suspicious selling patterns), the transaction is blocked to prevent you from losing money</li>
+        <li><strong>Structuring Detection:</strong> Forter identifies patterns where a buyer is splitting purchases across multiple transactions or accounts to avoid KYC thresholds — a common money laundering tactic</li>
+        <li><strong>Account Clustering Detection:</strong> Forter detects when multiple buyer accounts are operated from the same device or location — indicating potential coordinated fraud rings or a single person using multiple identities</li>
+        <li><strong>Cross-Market Intelligence:</strong> Forter processes billions of transactions across its global merchant network (including Nordstrom, Priceline, Instacart, and others), enabling detection of fraud patterns that are invisible in a single platform's data</li>
+      </ul>
+
+      <h3>Forter Decision Outputs for Buyer Transactions</h3>
+      <p>For each purchase, Forter returns a real-time decision to 60YR's platform:</p>
+      <div class="aml-decision-table">
+        <div class="aml-decision-row aml-decision-approve">
+          <div class="aml-decision-label">Approve</div>
+          <div class="aml-decision-desc">Transaction is clean — your purchase proceeds normally and your payment is held in escrow until delivery is confirmed</div>
+        </div>
+        <div class="aml-decision-row aml-decision-review">
+          <div class="aml-decision-label">Review</div>
+          <div class="aml-decision-desc">Risk signals detected — your transaction is held for manual compliance review. You will be notified if additional information is needed</div>
+        </div>
+        <div class="aml-decision-row aml-decision-reject">
+          <div class="aml-decision-label">Reject</div>
+          <div class="aml-decision-desc">High-confidence fraud or AML violation — transaction is blocked. If you believe this is an error, contact <a href="mailto:compliance@60yr.com">compliance@60yr.com</a></div>
+        </div>
+      </div>
+
+      <div class="article-callout">
+        <p><strong>Why Forter?</strong> Forter is the leading real-time fraud prevention platform, trusted by major global companies. Forter processes over $500B in annual transaction volume and provides <strong>instant, fully automated decisions</strong>. This means suspicious transactions on 60YR are not just flagged — they are <em>actioned</em> immediately, protecting buyers from financial loss before it occurs.</p>
+      </div>
+
+      <h2>Multi-Layer AML Enforcement Model</h2>
+      <p>60YR's AML enforcement operates on three distinct layers, each reinforced by third-party technology — protecting both buyers and sellers:</p>
+      <ul>
+        <li><strong>Pre-Entry Layer (Sumsub):</strong> All sellers must complete Sumsub identity verification before listing. Buyers exceeding thresholds or flagged for risk must also verify. Unverified users cannot exceed purchase limits or receive payouts.</li>
+        <li><strong>Transaction Layer (Forter):</strong> Every financial transaction — purchases, payouts, refunds — is analyzed by Forter's decision engine in real time. Suspicious transactions are automatically held or rejected before funds move, protecting both parties.</li>
+        <li><strong>Post-Event Layer (Manual Review):</strong> Our compliance team conducts periodic audits, investigates flagged patterns, and reviews accounts with cumulative activity exceeding regulatory thresholds. All decisions and evidence are retained for a minimum of 5 years for regulatory audit purposes.</li>
       </ul>
 
       <h2>Prohibited Activities (AML-Related)</h2>
@@ -653,26 +772,33 @@ const ARTICLE_DB = {
         <li>Using multiple accounts to circumvent AML controls</li>
         <li>Purchasing accounts with the intent to resell for profit laundering</li>
         <li>Using payment anonymization tools in connection with platform payments</li>
+        <li>Maintaining inconsistent identity information across your account, KYC documents, and payment details</li>
       </ul>
 
       <h2>Consequences of AML Violations</h2>
       <p>Users found to be engaged in money laundering or related activities will face:</p>
       <ul>
         <li>Immediate account suspension and fund freeze</li>
-        <li>Reporting to relevant law enforcement and financial authorities</li>
+        <li>Mandatory AML investigation (up to 90 days)</li>
+        <li>Reporting to relevant financial intelligence units (FIU) and law enforcement authorities as required by law</li>
         <li>Permanent ban from the 60YR platform</li>
         <li>Potential civil and criminal liability under applicable laws</li>
+        <li>Reversal of all transactions associated with the flagged activity</li>
       </ul>
 
       <h2>Reporting Suspicious Activity</h2>
-      <p>If you suspect another user is engaged in money laundering or financial fraud, please report them via our platform reporting tool or email <a href="mailto:compliance@60yr.com">compliance@60yr.com</a>. All reports are treated with strict confidentiality.</p>
+      <p>If you suspect another user is engaged in money laundering or financial fraud — whether a seller offering suspiciously cheap accounts, or a buyer attempting to use your seller account for laundering — please report them via our platform reporting tool or email <a href="mailto:compliance@60yr.com">compliance@60yr.com</a>. All reports are treated with strict confidentiality. Buyers who report suspicious activity in good faith are protected from liability.</p>
 
       <div class="article-callout">
         <p><strong>Safe Harbor:</strong> Users who cooperate fully with AML investigations and report suspicious activity voluntarily will receive good-faith protection under 60YR's compliance program.</p>
       </div>
 
       <div class="article-callout">
-        <p><strong>For Sellers:</strong> Sellers have additional AML obligations, including mandatory Sumsub identity verification and enhanced due diligence for high-volume accounts. See our <a href="article.html?id=saml1">Seller AML Policy</a> for complete details.</p>
+        <p><strong>For Sellers:</strong> Sellers have additional AML obligations, including mandatory Sumsub identity verification before any payout access, and enhanced due diligence for high-volume accounts. See our <a href="article.html?id=saml1">Seller AML Policy</a> for complete details.</p>
+      </div>
+
+      <div class="article-callout">
+        <p><strong>Regulatory Contact:</strong> 60YR's compliance program is overseen by SEAWORLD TECHNOLOGY LIMITED. For regulatory inquiries, contact <a href="mailto:compliance@60yr.com">compliance@60yr.com</a>. Transaction records and KYC data are retained for a minimum of 5 years in compliance with FATF and applicable jurisdiction requirements.</p>
       </div>
     `
   },
